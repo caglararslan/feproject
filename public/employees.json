@@ -1,0 +1,167 @@
+[
+    {
+      "id": 1,
+      "firstName": "Ali",
+      "lastName": "Yılmaz",
+      "dateOfBirth": "1990-01-15",
+      "employmentDate": "2020-06-01",
+      "phone": "+90 532 000 0000",
+      "email": "ali.yilmaz@example.com",
+      "department": "Tech",
+      "position": "Senior"
+    },
+    {
+      "id": 2,
+      "firstName": "Ayşe",
+      "lastName": "Kaya",
+      "dateOfBirth": "1988-04-22",
+      "employmentDate": "2018-03-15",
+      "phone": "+90 534 123 4567",
+      "email": "ayse.kaya@example.com",
+      "department": "Analytics",
+      "position": "Medior"
+    },
+    {
+      "id": 3,
+      "firstName": "Mehmet",
+      "lastName": "Demir",
+      "dateOfBirth": "1995-11-03",
+      "employmentDate": "2021-10-10",
+      "phone": "+90 531 765 4321",
+      "email": "mehmet.demir@example.com",
+      "department": "Tech",
+      "position": "Junior"
+    },
+    {
+      "id": 4,
+      "firstName": "Elif",
+      "lastName": "Arslan",
+      "dateOfBirth": "1992-07-08",
+      "employmentDate": "2019-01-12",
+      "phone": "+90 533 111 2222",
+      "email": "elif.arslan@example.com",
+      "department": "Analytics",
+      "position": "Senior"
+    },
+    {
+      "id": 5,
+      "firstName": "Burak",
+      "lastName": "Koç",
+      "dateOfBirth": "1985-03-18",
+      "employmentDate": "2017-04-25",
+      "phone": "+90 535 222 3333",
+      "email": "burak.koc@example.com",
+      "department": "Tech",
+      "position": "Medior"
+    },
+    {
+      "id": 6,
+      "firstName": "Zeynep",
+      "lastName": "Uçar",
+      "dateOfBirth": "1993-09-14",
+      "employmentDate": "2022-02-01",
+      "phone": "+90 530 444 5566",
+      "email": "zeynep.ucar@example.com",
+      "department": "Analytics",
+      "position": "Junior"
+    },
+    {
+      "id": 7,
+      "firstName": "Emre",
+      "lastName": "Şahin",
+      "dateOfBirth": "1987-11-27",
+      "employmentDate": "2016-11-15",
+      "phone": "+90 531 999 8888",
+      "email": "emre.sahin@example.com",
+      "department": "Tech",
+      "position": "Senior"
+    },
+    {
+      "id": 8,
+      "firstName": "Hale",
+      "lastName": "Kurt",
+      "dateOfBirth": "1991-05-05",
+      "employmentDate": "2020-08-03",
+      "phone": "+90 534 121 1212",
+      "email": "hale.kurt@example.com",
+      "department": "Analytics",
+      "position": "Medior"
+    },
+    {
+      "id": 9,
+      "firstName": "Mert",
+      "lastName": "Aydın",
+      "dateOfBirth": "1996-12-09",
+      "employmentDate": "2023-01-09",
+      "phone": "+90 536 000 7777",
+      "email": "mert.aydin@example.com",
+      "department": "Tech",
+      "position": "Junior"
+    },
+    {
+      "id": 10,
+      "firstName": "Mert",
+      "lastName": "Aydın",
+      "dateOfBirth": "1996-12-09",
+      "employmentDate": "2023-01-09",
+      "phone": "+90 536 000 7777",
+      "email": "mert.aydin@example.com",
+      "department": "Tech",
+      "position": "Junior"
+    },
+    {
+      "id": 11,
+      "firstName": "Mert",
+      "lastName": "Aydın",
+      "dateOfBirth": "1996-12-09",
+      "employmentDate": "2023-01-09",
+      "phone": "+90 536 000 7777",
+      "email": "mert.aydin@example.com",
+      "department": "Tech",
+      "position": "Junior"
+    },
+    {
+      "id": 12,
+      "firstName": "Metin",
+      "lastName": "Aydıner",
+      "dateOfBirth": "1996-12-09",
+      "employmentDate": "2023-01-09",
+      "phone": "+90 536 000 7777",
+      "email": "metin.aydiner@example.com",
+      "department": "Tech",
+      "position": "Medior"
+    },
+    {
+      "id": 13,
+      "firstName": "Seda",
+      "lastName": "Öztürk",
+      "dateOfBirth": "1994-10-20",
+      "employmentDate": "2021-07-07",
+      "phone": "+90 530 654 3210",
+      "email": "seda.ozturk@example.com",
+      "department": "Analytics",
+      "position": "Senior"
+    },
+    {
+      "id": 14,
+      "firstName": "Seda",
+      "lastName": "Öztürk",
+      "dateOfBirth": "1994-10-20",
+      "employmentDate": "2021-07-07",
+      "phone": "+90 530 654 3210",
+      "email": "seda.ozturk@example.com",
+      "department": "Analytics",
+      "position": "Senior"
+    },
+    {
+      "id": 15,
+      "firstName": "Seda",
+      "lastName": "Öztürk",
+      "dateOfBirth": "1994-10-20",
+      "employmentDate": "2021-07-07",
+      "phone": "+90 530 654 3210",
+      "email": "seda.ozturk@example.com",
+      "department": "Analytics",
+      "position": "Senior"
+    }
+  ]
