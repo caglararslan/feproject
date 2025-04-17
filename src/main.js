@@ -110,7 +110,7 @@ class EmployeeApp extends LitElement {
     const hash = location.hash || '#/employees';
 
     if (hash === '#/add') {
-      return html`<employee-form-view></employee-form-view>`;
+      return html`<employee-form-view .lang=${this.selectedLanguage}></employee-form-view>`;
     }
 
     return html`<employee-list-view .lang=${this.selectedLanguage}></employee-list-view>`;

@@ -67,7 +67,8 @@ export class EmployeeFormView extends LitElement {
   `;
 
   static properties = {
-    employeeData: { type: Object }
+    employeeData: { type: Object },
+    lang: { type: String }
   };
 
   constructor() {
@@ -82,7 +83,35 @@ export class EmployeeFormView extends LitElement {
       department: 'Tech',
       position: 'Junior'
     };
+    this.lang = 'EN';
   }
+
+  translations = {
+    EN: {
+      title: "Add New Employee",
+      firstName: "First Name",
+      lastName: "Last Name",
+      dob: "Date of Birth",
+      startDate: "Employment Date",
+      phone: "Phone",
+      email: "Email",
+      department: "Department",
+      position: "Position",
+      save: "Save"
+    },
+    TR: {
+      title: "Yeni Çalışan Ekle",
+      firstName: "Ad",
+      lastName: "Soyad",
+      dob: "Doğum Tarihi",
+      startDate: "İşe Giriş Tarihi",
+      phone: "Telefon",
+      email: "E-posta",
+      department: "Departman",
+      position: "Pozisyon",
+      save: "Kaydet"
+    }
+  };
 
   handleInput(e) {
     const { name, value } = e.target;
@@ -114,43 +143,43 @@ export class EmployeeFormView extends LitElement {
   render() {
     const d = this.employeeData;
     return html`
-      <div class="form-container">
-        <h2>Add New Employee</h2>
-        <form @submit=${this.handleSubmit}>
-          <label>First Name:
-            <input name="firstName" .value=${d.firstName} @input=${this.handleInput} required />
-          </label>
-          <label>Last Name:
-            <input name="lastName" .value=${d.lastName} @input=${this.handleInput} required />
-          </label>
-          <label>Date of Birth:
-            <input type="date" name="dateOfBirth" .value=${d.dateOfBirth} @input=${this.handleInput} required />
-          </label>
-          <label>Employment Date:
-            <input type="date" name="employmentDate" .value=${d.employmentDate} @input=${this.handleInput} required />
-          </label>
-          <label>Phone:
-            <input name="phone" .value=${d.phone} @input=${this.handleInput} />
-          </label>
-          <label>Email:
-            <input name="email" .value=${d.email} @input=${this.handleInput} />
-          </label>
-          <label>Department:
-            <select name="department" @change=${this.handleInput}>
-              <option value="Tech" ?selected=${d.department === 'Tech'}>Tech</option>
-              <option value="Analytics" ?selected=${d.department === 'Analytics'}>Analytics</option>
-            </select>
-          </label>
-          <label>Position:
-            <select name="position" @change=${this.handleInput}>
-              <option value="Junior" ?selected=${d.position === 'Junior'}>Junior</option>
-              <option value="Medior" ?selected=${d.position === 'Medior'}>Medior</option>
-              <option value="Senior" ?selected=${d.position === 'Senior'}>Senior</option>
-            </select>
-          </label>
-          <button type="submit">Save</button>
-        </form>
-      </div>
+    <div class="form-container">
+    <h2>${this.translations[this.lang].title}</h2>
+    <form @submit=${this.handleSubmit}>
+      <label>${this.translations[this.lang].firstName}:
+        <input name="firstName" .value=${d.firstName} @input=${this.handleInput} required />
+      </label>
+      <label>${this.translations[this.lang].lastName}:
+        <input name="lastName" .value=${d.lastName} @input=${this.handleInput} required />
+      </label>
+      <label>${this.translations[this.lang].dob}:
+        <input type="date" name="dateOfBirth" .value=${d.dateOfBirth} @input=${this.handleInput} required />
+      </label>
+      <label>${this.translations[this.lang].startDate}:
+        <input type="date" name="employmentDate" .value=${d.employmentDate} @input=${this.handleInput} required />
+      </label>
+      <label>${this.translations[this.lang].phone}:
+        <input name="phone" .value=${d.phone} @input=${this.handleInput} />
+      </label>
+      <label>${this.translations[this.lang].email}:
+        <input name="email" .value=${d.email} @input=${this.handleInput} />
+      </label>
+      <label>${this.translations[this.lang].department}:
+        <select name="department" @change=${this.handleInput}>
+          <option value="Tech" ?selected=${d.department === 'Tech'}>Tech</option>
+          <option value="Analytics" ?selected=${d.department === 'Analytics'}>Analytics</option>
+        </select>
+      </label>
+      <label>${this.translations[this.lang].position}:
+        <select name="position" @change=${this.handleInput}>
+          <option value="Junior" ?selected=${d.position === 'Junior'}>Junior</option>
+          <option value="Medior" ?selected=${d.position === 'Medior'}>Medior</option>
+          <option value="Senior" ?selected=${d.position === 'Senior'}>Senior</option>
+        </select>
+      </label>
+      <button type="submit">${this.translations[this.lang].save}</button>
+    </form>
+  </div>
     `;
   }
 }
